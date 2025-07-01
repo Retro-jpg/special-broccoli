@@ -11,9 +11,6 @@
 /*@import url("https://blade04208.github.io/css/aerotitlebuttons.css");*/
 /* @import url("https://raw.githubusercontent.com/Augenbl1ck/compact-user-area/refs/heads/main/user-area-spotify-control.css"); */
 @import url("https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css");
-body, html, head{
-  image-rendering: optimizeQuality;
-}
 /* shiggy load */
   .content_a2f514 {
       display: flex;
