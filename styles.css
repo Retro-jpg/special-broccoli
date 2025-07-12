@@ -1,14 +1,14 @@
 /* all the imports shit, can't you read?? */
-/* @import url(https://blade04208.github.io/ddex4/src/bubbles.css); */
-/* @import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css'); */
-/* multitweaks */ @import url('https://abbie.github.io/discord-css/import.css');
-@import url(https://davart154.github.io/Themes/Snippets/Simplified%20Panel%20Area/SimplifiedPanelArea.css);
+/* @import url("https://blade04208.github.io/ddex4/src/bubbles.css"); */
+/* @import url("https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css"); */
+/* multitweaks */ @import url("https://abbie.github.io/discord-css/import.css");
+@import url("https://davart154.github.io/Themes/Snippets/Simplified%20Panel%20Area/SimplifiedPanelArea.css");
 @import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
 @import url("https://dablulite.github.io/css-snippets/AccountSettingsRefresh/import.css");
 @import url("https://gist.githubusercontent.com/amozeo/22bba69967d8be82bb4e4766c911cd87/raw/3744068b866a11abd5cd261769b9fc98ed087513/snippet.css");
 @import url("https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css");
-@import url("https://raw.githubusercontent.com/HeroOfDungeon/snippets/refs/heads/main/More%20Animations.css");
-/* @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PopoutsRevamped.css'); */
+/* subtle message options */ @import url("https://raw.githubusercontent.com/HeroOfDungeon/snippets/refs/heads/main/More%20Animations.css");
+/* @import url("https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PopoutsRevamped.css"); */
 /*@import url("https://blade04208.github.io/css/aerotitlebuttons.css");*/
 /* @import url("https://raw.githubusercontent.com/Augenbl1ck/compact-user-area/refs/heads/main/user-area-spotify-control.css"); */
 @import url("https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css");
