@@ -300,6 +300,7 @@
     --\\--darker-hovered-message: true;
     --\\--prevent-sidebar-resizing: false;
     --\\--fix-minor-icon-misalignments: true;
+    --animation-speed: 0.3s;
 }
 
 /* ---------------------------------------------------------------------- */
