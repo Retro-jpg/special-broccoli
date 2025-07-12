@@ -11,6 +11,9 @@
 /*@import url("https://blade04208.github.io/css/aerotitlebuttons.css");*/
 /* @import url("https://raw.githubusercontent.com/Augenbl1ck/compact-user-area/refs/heads/main/user-area-spotify-control.css"); */
 @import url("https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css");
+
+/* ---------------------------------------------------------------------- */
+
 /* shiggy load */
   .content_a2f514 {
       display: flex;
@@ -27,6 +30,9 @@
           margin-bottom: 96px;
       }
   }
+
+/* ---------------------------------------------------------------------- */
+
 /* Animated Account popout */
 /*
   .panels_c48ade {
@@ -71,6 +77,8 @@
     bottom: 0px!important;
   }
 
+/* ---------------------------------------------------------------------- */
+
 /* Titlebar tweak (actually uses the space for shit */
   .title_c38106 {
     display: none;
@@ -106,6 +114,9 @@
   .topic__6ec1a {
     flex: none;
   }
+
+/* ---------------------------------------------------------------------- */
+
 /* compact context popup */
   /* reduce context menu padding */
   .layer_da8173 > .menu_c1e9c4 {
@@ -151,6 +162,9 @@
           align-items: center;
       }
   }
+
+/* ---------------------------------------------------------------------- */
+
 /* custom people are typing message */
   .typingDots_b88801 > .ellipsis_b88801+.text_b88801 {
     font-size: 0;
@@ -179,6 +193,9 @@
       content: "Several people are fucking liars...";
     }
   }
+
+/* ---------------------------------------------------------------------- */
+
 /* Clan Tags but cooler */
   .chipletContainerInner__10651 > .text__10651 > .tagText__10651 {
     display: inline-block;
@@ -216,6 +233,9 @@
     clear: both;
     margin-top: .5ch;
   }
+
+/* ---------------------------------------------------------------------- */
+
 /* Remove the weird reacting to statuses shit */
   [class*='statusPopover'], [class*='avatarPopover__'], [class*='activityPopover__'] {display:none;}
   .layerContainer_da8173 .positionLayer__08434 {
@@ -238,6 +258,9 @@
           width: 90vw !important;
       }
   }
+
+/* ---------------------------------------------------------------------- */
+
 /* multitweaks */
 
 :root {
@@ -277,8 +300,13 @@
     --\\--prevent-sidebar-resizing: false;
     --\\--fix-minor-icon-misalignments: true;
 }
+
+/* ---------------------------------------------------------------------- */
+
 /* fixes the weird ass folder interior borders */
   /* .icon_f34534.guildIcon__48112 { border-radius: 50% !important } */
+
+/* ---------------------------------------------------------------------- */
 
 /* resizes the default account info card */
   /* .visual-refresh section.panels_c48ade {
@@ -318,6 +346,9 @@
         width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
       }
  */
+
+/* ---------------------------------------------------------------------- */
+
 /* Make Room for mutuals, fatass */
   [class^=focusLock]:has([class*=userProfileOuter])
   {
@@ -330,3 +361,80 @@
 [aria-label^="Click to react with"] {
   order: -2;
 }
+
+/* ---------------------------------------------------------------------- */
+
+/*Auto Hide ServerList https://discord.com/channels/1015060230222131221/1028106818368589824/1393542987731963995*/
+.guilds_c48ade {
+  position: fixed;
+  z-index: 998;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  background-color: rgb(0 0 0 / 0);
+  pointer-events: none;
+  transition: background-color 0.3s;
+}
+
+.guilds_c48ade:has(.itemsContainer_ef3116:hover) {
+  background-color: rgb(0 0 0 / 0.25);
+  pointer-events: all;
+}
+
+.itemsContainer_ef3116 {
+  position: fixed;
+  left: -64.425px; /*changed*/
+  transition: all 0.3s;
+  pointer-events: all;
+  background-color: var(--background-base-lowest)!important;
+  border-right: 1px solid var(--border-subtle);
+}
+
+.itemsContainer_ef3116:hover {
+  left: 0px;
+  transition: all 0.3s;
+
+  &::after {
+    opacity: 0;
+        left: 0px;
+  }
+}
+
+.itemsContainer_ef3116::after {
+  /* content: "→"; */
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  position: absolute;
+  align-content: center;
+  text-align: center;
+  top: 40px;
+  left: 64.425px; /*Changed*/
+  cursor: pointer;
+  color: var(--button-secondary-text);
+  background-color: var(--background-accent);
+  z-index: 20;
+  transition: all 0.3s;
+  border-radius: 0px var(--radius-sm) var(--radius-sm) 0px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Messages Popping out */
+[data-list-item-id*="message"],
+[class*="messageListItem"],
+[id*="message-"],
+li[class*="messageListItem"] {
+    position: relative;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+[data-list-item-id*="message"]:hover,
+[class*="messageListItem"]:hover,
+li[class*="messageListItem"]:hover {
+    transform: translateX(6px);
+}
+
+/* ---------------------------------------------------------------------- */
+
+/*  */
