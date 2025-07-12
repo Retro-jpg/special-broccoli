@@ -377,29 +377,33 @@
 }
 
 .guilds_c48ade:has(.itemsContainer_ef3116:hover) {
-  background-color: rgba(7, 7, 9, 0.25)!important;
+  background-color: rgba(7, 7, 9, 0.8)!important;
   pointer-events: all;
 }
 
 .itemsContainer_ef3116 {
   position: fixed;
-  left: -63.992px;
+  left: -55.993px;
   transition: all 0.3s;
   pointer-events: all;
   background-color: rgb(7, 7, 9)!important;
-  border-right: 1px solid var(--border-subtle);
+  border-right: 0px solid var(--border-subtle);
+  box-shadow: -100px 0px 20px rgba(7, 7, 9, 0);
 }
 
 .itemsContainer_ef3116:hover {
   left: 0px;
   transition: all 0.3s;
+  border-right: 1px solid var(--border-subtle);
+  box-shadow: 0px 0px 20px rgba(7, 7, 9, 1);
 }
 
 /* ---------------------------------------------------------------------- */
 
 /* Read all button */
 .vc-ranb-button {
-  margin: 0 12px;
+  margin: 0px;
+  left: 7.5px;
   display: flex;
   position: relative;
   width: calc(100% -24px);
@@ -439,6 +443,7 @@
     }
   }
 }
+
 
 /* ---------------------------------------------------------------------- */
 
