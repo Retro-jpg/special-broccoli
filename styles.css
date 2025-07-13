@@ -424,7 +424,7 @@
 /* Read all button */
 .vc-ranb-button {
   margin: 0px;
-  left: 12px;
+  left: 7.5px;
   display: flex;
   position: relative;
   width: calc(100% -24px);
