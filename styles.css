@@ -412,10 +412,7 @@
   width: 40px;
   height: 100%;
   overflow: visible;
-  /* font-size: 32px; */
   position: absolute;
-  /* align-content: center;
-  text-align: center; */
   top: 0px;
   left: calc(-20px + var(--custom-guild-list-width));
   /* background-color: azure; */
